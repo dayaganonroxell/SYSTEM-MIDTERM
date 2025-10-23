@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Scholarship Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav>
+    <a href="#login">Home</a>
+    <a href="#about">About</a>
+    <a href="#scholarships">Scholarships</a>
+    <a href="#apply">Apply</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="login">
+    <div class="login-container">
+      <h2>Find the right Scholarship for you!</h2>
+      <form action="#" method="post">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Username" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <div class="extra">
+        <p>Forgot your password? <a href="#">Reset</a></p>
+        <p>New here? <a href="./register.html">Create Account</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <main>
+      <div class="logo-container">
+        <img src="ctu.png" alt="Organization Logo" class="logo">
+        <p class="logo-caption">Cebu Technological University</p>
+      </div>
+      <div class="content-section">
+        <h2>Our Purpose</h2>
+        <p>Our purpose is to support students through accessible scholarship
+          information. We aim to provide a platform where students can easily find and
+          apply for scholarships, making higher education more accessible and
+          affordable.</p>
+      </div>
+      <div class="content-section">
+        <h2>Our Mission</h2>
+        <p>Our mission is to empower students by providing them with the
+          necessary tools to achieve their academic goals. We strive to make a positive
+          impact on the lives of students and contribute to the development of a more
+          educated and skilled society.</p>
+      </div>
+      <div class="content-section">
+        <h2>Our Values</h2>
+        <ul>
+          <li><strong>Accessibility:</strong> Scholarship information should be easily accessible to all students.</li>
+          <li><strong>Transparency:</strong> We provide clear and accurate information about scholarships and the application process.</li>
+          <li><strong>Empowerment:</strong> We empower students to take control of their academic careers and make informed decisions.</li>
+        </ul>
+      </div>
+    </main>
+  </section>
+
+  <section id="scholarships">
+    <div class="card-container">
+      <div class="card edsel-card">
+        <img class="image__src" src="edsel.png" alt="Scholarship 1">
+        <h2>TDP 3.1 SCHOLARSHIP</h2>
+        <p class="sponsor">Sponsor: Cong. Edsel Amatong Galeos</p>
+        <button>View Details</button>
+      </div>
+
+      <div class="card lgu-card">
+        <img class="image__src" src="lgu.png" alt="Scholarship 2">
+        <h2>E-ATESAP SCHOLARSHIP</h2>
+        <p class="sponsor">Sponsor: Local Government Unit ARGAO</p>
+        <button>View Details</button>
+      </div>
+
+      <div class="card stanley-card">
+        <img class="image__src" src="stanley.png" alt="Scholarship 3">
+        <h2>CP GIFTS SCHOLARSHIP</h2>
+        <p class="sponsor">Sponsor: Doc. Stanley Caminero</p>
+        <button>View Details</button>
+      </div>
+
+      <div class="card landbank-card">
+        <img class="image__src" src="landbank.png" alt="Scholarship 4">
+        <h2>ISKOLAR NG LANDBANK</h2>
+        <p class="sponsor">Sponsor: LandBank Company</p>
+        <button>View Details</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="apply">
+    <div class="container">
+      <header>Register Form</header>
+      <form action="submit.php" method="POST" class="form">
+        <div class="input-box">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first_name" placeholder="Enter First Name" required>
+        </div>
+
+        <div class="input-box">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last_name" placeholder="Enter Last Name" required>
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+              <option value="" hidden>Select Gender</option>
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+            </select>
+          </div>
+
+          <div class="input-box">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+          </div>
+        </div>
+
+        <div class="input-box">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter Email" required>
+        </div>
+
+        <div class="input-box">
+          <label for="scholarship">Scholarship</label>
+          <input type="text" id="scholarship" name="scholarship" placeholder="Enter Scholarship Applying for" required>
+        </div>
+
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-container">
+      <div class="contact-header">
+        <h2>We’d Love to Hear From You</h2>
+        <p>Have questions about scholarships or applications? Reach us anytime!</p>
+      </div>
+
+      <div class="contact-info">
+        <p><strong>Email:</strong> ctuargao@gmail.com</p>
+        <p><strong>Phone:</strong> 0987-465-5321</p>
+        <p><strong>Address:</strong> Cebu Technological University - Argao Campus</p>
+      </div>
+
+      <form class="contact-form" onsubmit="return sendMessage()">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message..." required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Scholarship Information System | Cebu Technological University</p>
+  </footer>
+
+  <script>
+    function sendMessage() {
+      alert("Thank you for contacting us! We’ll get back to you soon.");
+      return false;
+    }
+  </script>
+
+</body>
+</html>
