@@ -1,0 +1,473 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #e0e0e0;
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 15px 0;
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffeaa7;
+}
+
+nav a.active {
+  color: #ffeaa7;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+section {
+  box-sizing: border-box;
+}
+
+/* =================================================== */
+/* LOGIN Section */
+/* =================================================== */
+
+#login {
+  margin: 0;
+  padding: 40px 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("ctu.png") no-repeat center center/cover;
+}
+
+#login .login-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px;
+  width: 350px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+#login .login-container h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+#login .login-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+}
+
+#login .login-container input[type="text"],
+#login .login-container input[type="password"] {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+#login .login-container button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+#login .login-container button:hover {
+  background: linear-gradient(135deg, #5563c1, #5c3c8a);
+}
+
+#login .extra {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+#login .extra a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =================================================== */
+/* ABOUT Section */
+/* =================================================== */
+
+#about {
+  background-color: #e0e0e0;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+#about .logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#about .logo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #9ca7b9;
+  background-color: #443737;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about .logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+#about .content-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#about .content-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#about .content-section p,
+#about .content-section ul {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+#about .content-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#about .content-section li {
+  margin-bottom: 10px;
+}
+
+/* =================================================== */
+/* SCHOLARSHIPS Section */
+/* =================================================== */
+
+#scholarships {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('grad.png');
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0;
+}
+
+#scholarships .card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px 60px;
+  justify-content: center;
+  padding: 40px;
+}
+
+#scholarships .card {
+  width: 280px;
+  height: 320px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: transform 0.3s ease;
+}
+
+#scholarships .card:hover {
+  transform: translateY(-5px);
+}
+
+#scholarships .card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+  border-radius: 12px;
+}
+
+#scholarships .card * {
+  position: relative;
+  z-index: 1;
+}
+
+#scholarships .card h2 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+#scholarships .sponsor {
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#scholarships .card button {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #000;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+#scholarships .card button:hover {
+  background-color: white;
+}
+
+#scholarships .edsel-card { background-image: url('edsel.png'); }
+#scholarships .lgu-card { background-image: url('lgu.png'); }
+#scholarships .stanley-card { background-image: url('stanley.png'); }
+#scholarships .landbank-card { background-image: url('landbank.png'); }
+
+#scholarships .image__src {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 15px auto;
+  border: 3px solid white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  #scholarships .card-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =================================================== */
+/* APPLY Section */
+/* =================================================== */
+
+#apply {
+  padding: 40px;
+  background: #f0f0f0;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+#apply .container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#apply header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#apply .form .input-box {
+  width: 100%;
+  margin-top: 15px;
+}
+
+#apply .input-box label {
+  font-weight: 500;
+}
+
+#apply .form .input-box input,
+#apply .form .input-box select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+#apply .form .column {
+  display: flex;
+  gap: 15px;
+}
+
+#apply .form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background: #667eea;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+#apply .form button:hover {
+  background: #5563c1;
+}
+
+/* =================================================== */
+/* CONTACT Section */
+/* =================================================== */
+
+#contact {
+  background-color: #f0f0f0;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+#contact .contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 15px;
+  padding: 40px;
+  color: #000;
+  background: 
+    linear-gradient(rgba(255,255,255,0., rgba(255,255,255,0.8)),
+    url("ctu.jpg") center/cover no-repeat;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-header h2 {
+  font-size: 1.8em;
+  color: #333;
+}
+
+.contact-header p {
+  color: #555;
+}
+
+.contact-info {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-info p {
+  background: rgba(220,220,220,0.8);
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 1em;
+  outline: none;
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #777;
+  box-shadow: 0 0 5px rgba(85,85,85,0.3);
+}
+
+.contact-form button {
+  background: #808080;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #666666;
+}
+
+footer {
+  text-align: center;
+  background: #555;
+  color: white;
+  padding: 10px 0;
+  margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+  #contact .contact-container {
+    padding: 20px;
+  }
+}
