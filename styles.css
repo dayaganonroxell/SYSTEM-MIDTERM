@@ -39,9 +39,7 @@ section {
   box-sizing: border-box;
 }
 
-/* =================================================== */
 /* LOGIN Section */
-/* =================================================== */
 
 #login {
   margin: 0;
@@ -50,7 +48,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("ctu.png") no-repeat center center/cover;
+  background: url("CTU.png") no-repeat center center/cover;
 }
 
 #login .login-container {
@@ -124,12 +122,10 @@ section {
   }
 }
 
-/* =================================================== */
 /* ABOUT Section */
-/* =================================================== */
 
 #about {
-  background-color: #e0e0e0;
+  background-image: url('school.png'); 
   padding: 40px 0;
   font-family: Arial, sans-serif;
 }
@@ -195,9 +191,7 @@ section {
   margin-bottom: 10px;
 }
 
-/* =================================================== */
 /* SCHOLARSHIPS Section */
-/* =================================================== */
 
 #scholarships {
   display: flex;
@@ -302,13 +296,11 @@ section {
   }
 }
 
-/* =================================================== */
 /* APPLY Section */
-/* =================================================== */
 
 #apply {
   padding: 40px;
-  background: #f0f0f0;
+  background-image: url('school.png'); 
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
 }
@@ -371,12 +363,10 @@ section {
   background: #5563c1;
 }
 
-/* =================================================== */
 /* CONTACT Section */
-/* =================================================== */
 
 #contact {
-  background-color: #f0f0f0;
+  background-color: #fcc387;
   padding-top: 80px;
   padding-bottom: 50px;
 }
@@ -389,8 +379,10 @@ section {
   color: #000;
   background: 
     linear-gradient(rgba(255,255,255,0.), rgba(255,255,255,0.8)),
-    url("ctu.jpg") center/cover no-repeat;
+    url("CTU.png") center/cover no-repeat;
+    background-image: url('school.png'); 
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    
 }
 
 .contact-header {
@@ -400,11 +392,11 @@ section {
 
 .contact-header h2 {
   font-size: 1.8em;
-  color: #333;
+  color: #fdfafa;
 }
 
 .contact-header p {
-  color: #555;
+  color: #f8f7f7;
 }
 
 .contact-info {
@@ -413,7 +405,7 @@ section {
 }
 
 .contact-info p {
-  background: rgba(220,220,220,0.8);
+  background: #f4f7f7;
   display: inline-block;
   padding: 10px 15px;
   margin: 5px;
@@ -429,7 +421,7 @@ section {
 .contact-form input,
 .contact-form textarea {
   padding: 12px;
-  border: 1px solid #bbb;
+  border: 1px solid #ffffff;
   border-radius: 6px;
   font-size: 1em;
   outline: none;
@@ -442,8 +434,16 @@ section {
   box-shadow: 0 0 5px rgba(85,85,85,0.3);
 }
 
+#contact .container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 .contact-form button {
-  background: #808080;
+  background: #667eea;
   color: white;
   border: none;
   padding: 12px;
